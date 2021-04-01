@@ -86,15 +86,6 @@ exclude:
   - CNAME
 
 collections:
-  refutals:
-    output: true
-    permalink: /refutals/:path/
-  wahhabism:
-    output: true
-    permalink: /wahhabism/:path/
-  muqolat:
-    output: true
-    permalink: /muqolat/:title/
   audios:
     output: true
     active: audios
