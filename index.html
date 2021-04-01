@@ -2,11 +2,15 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-          <a href="{{ site.baseurl }}{{ post.url }}" class="card waves-effect waves-grey radius black-text">
-            <div class="card-content">
-              <span class="card-title">{{ post.title }}</span>
-              {{ post.excerpt }}
-            </div>
-          </a>
-{% endfor %}
+    <div class="card radius black-text">
+     <div class="card-content">
+      <ul class="collection with-header border-0">
+        <li class="collection-header">
+        <span class="card-title">Latest Audios<a href="#" class="secondary-content">View all</a></span>
+        </li>
+        {% for post in site.posts %}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="collection-item waves-effect waves-grey block ">{{ post.title }}</a>
+        {% endfor %}
+      </ul>
+     </div>
+    </div>
